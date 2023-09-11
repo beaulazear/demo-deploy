@@ -3,7 +3,8 @@
 set -o errexit
 
 rm -rf public
-npm install --prefix client && npm run build --prefix client
+npm install --prefix client && npm run
+build --prefix client
 cp -a client/build/. public/
 
 bundle install
